@@ -1,4 +1,3 @@
-Scapes Rating
 ================
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
@@ -48,3 +47,6 @@ Credits
 
 License
 -------
+=======
+# scapes_rating
+Application for rating different features in groups and aggregating the data.
