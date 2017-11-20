@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <h3>Ratable Item Categories</h3>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="column">
+      <table class="table">
+        <tbody>
+          <% @ratable_item_categories.each do |ratable_item_category| %>
+            <tr>
+              <%= render ratable_item_category %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

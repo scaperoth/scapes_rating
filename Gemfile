@@ -11,10 +11,13 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'dotenv-rails'
+gem 'simple_form'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
+  gem "binding_of_caller"
 end
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -24,7 +27,7 @@ group :development do
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'administrate'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '= 4.0.0.alpha6'
 gem 'bourbon'
 gem 'devise'
 gem 'high_voltage'
@@ -37,7 +40,7 @@ group :development do
   gem 'spring-commands-rspec'
 end
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'faker'
   gem 'pry-rails'
   gem 'pry-rescue'

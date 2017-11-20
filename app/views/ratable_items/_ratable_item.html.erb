@@ -1,0 +1,9 @@
+<td>
+  <%= link_to ratable_item.name, ratable_item %>
+</td>
+<td>
+  <%= ratable_item.ratable_item_category.name %>
+</td>
+<td>
+  <%= link_to("Delete ratable item", ratable_item_path(ratable_item), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs')%>
+</td>

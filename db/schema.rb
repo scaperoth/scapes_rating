@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171119223337) do
+ActiveRecord::Schema.define(version: 20171120000836) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "ratable_item_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ratable_items", force: :cascade do |t|
+    t.string "name"
+    t.integer "rating"
+    t.bigint "ratable_item_category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ratable_item_category_id"], name: "index_ratable_items_on_ratable_item_category_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

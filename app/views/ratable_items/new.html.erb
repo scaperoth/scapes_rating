@@ -1,0 +1,7 @@
+<div class="authform">
+<%= simple_form_for @ratable_item do |f| %>
+  <%= f.input :name %>
+  <%= f.association :ratable_item_category %>
+  <%= f.submit 'Save' %>
+<% end %>
+</div>
